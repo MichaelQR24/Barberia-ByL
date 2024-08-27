@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav id="navbar">
+        <a id="navbar-logo" href="/Index.html">
+            <img src="../assets/LogoByL.png" alt="Logo">
+        </a>
+        <div id="navbar-title">
+            BARBERIA B&L
+        </div>
+        <a id="navbar-link" href="/Usuario/index.html">¿Recordaste tu contraseña?</a>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div id="recuperacion-contraseña">
+        <div id="recuperacion-contraseña-cuadro">
+            <!-- Sector izquierdo -->
+            <div id="recuperacion-contraseña-sector-izquierdo">
+                <form id="recuperacion-contraseña-form">
+                    <div class="form-group">
+                        <label for="email">¿Tienes problemas para iniciar sesión?</label>
+                        <input type="email" id="email" class="form-control" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <p class="or-text">o</p>
+                        <input type="text" id="celular" class="form-control" placeholder="Número de celular">
+                    </div>
+                    <div class="form-group space-group">
+                        <input type="password" class="form-control" placeholder="Nueva Contraseña">
+                    </div>
+                    <div class="form-group space-group">
+                        <input type="password" class="form-control" placeholder="Confirmación de Contraseña">
+                    </div>
+                    <button type="submit" class="btn">Recuperar</button>
+                </form>
+            </div>
+            
+            <!-- Sector derecho -->
+            <div id="recuperacion-contraseña-sector-derecho">
+                <div id="recuperacion-contraseña-titulo">¡Tranquilo SOBRINO!</div>
+                <div id="recuperacion-contraseña-info">En breves podrás recuperar tu contraseña</div>
+                <div id="recuperacion-contraseña-logo">
+                    <img src="../assets/LogoByL.png" alt="Logo" class="logo-sombra">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

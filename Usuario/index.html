@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio de Sesión</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Login Usuario - Barbería B&L</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body class="login-body">
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Iniciar sesión</h2>
-            <form>
-                <div class="login-textbox">
-                    <label for="login-email">Correo Electrónico</label>
-                    <input type="text" id="login-email" name="email">
+<body id="login-usuario">
+    <!-- Fondo con imagen -->
+    <div id="login-usuario-fondo" class="container-fluid p-0">
+        <div class="row no-gutters justify-content-center">
+            <!-- Cuadro Central -->
+            <div id="login-usuario-cuadro" class="col-md-10 col-lg-8">
+                <div class="row">
+                    <!-- Sector Izquierdo -->
+                    <div id="login-usuario-sector-izquierdo" class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <div id="login-usuario-logo" class="mb-4">
+                            <img src="./assets/LogoByL.png" alt="Logo Barbería B&L">
+                        </div>
+                        <form id="login-usuario-form" class="w-75">
+                            <div class="form-group">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" id="usuario" class="form-control" placeholder="Usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" id="contrasena" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" onclick="window.location.href='../index.html';">Ingresar</button>
+                        </form>
+                        <div id="login-usuario-recuperacion" class="mt-3">
+                            <a href="../Usuario/pages/RecuperacionUsuario.html" class="text-white font-weight-bold border-bottom border-white">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                    <!-- Sector Derecho -->
+                    <div id="login-usuario-sector-derecho" class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <div id="login-usuario-titulo" class="text-center mb-4">
+                            <h1>¿Aún no tienes una cuenta?</h1>
+                        </div>
+                        <div id="login-usuario-info" class="text-center mb-4">
+                            <p>Regístrate para que puedas iniciar sesión.</p>
+                            <a href="../Usuario/pages/RegistrateUsuario.html"registro-button" class="btn btn-warning btn-lg mt-3">REGISTRATE</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="login-textbox">
-                    <label for="login-password">Contraseña</label>
-                    <input type="password" id="login-password" name="password">
-                </div>
-                <a href="#" class="login-forgot-password">¿Olvidaste tu contraseña?</a>
-                <button type="submit" class="login-btn">Entrar</button>
-            </form>
-        </div>
-        <div class="register-box-usuario">
-            <h2>¿Aún no tienes una cuenta?</h2>
-            <p>Regístrate para que puedas iniciar sesión</p>
-            <button type="button" class="register-btn">Registrarse</button>
+            </div>
         </div>
     </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

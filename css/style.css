@@ -1,0 +1,1172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL */
+/* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL */
+/* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL */
+/* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL *//* INICIO DE SESION GENERAL */
+
+#login-general {
+    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#login-general-cuadro {
+    background: rgba(172, 161, 161, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1400px;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    min-height: 80vh;
+    margin: auto;
+}
+
+#login-general-sector-izquierdo {
+    background-color: rgba(98, 72, 72, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#login-general-logo img {
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+#login-general-botones {
+    width: 100%;
+    text-align: center;
+}
+
+#login-general-botones .btn {
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: #4ebda9;
+    border-color: #4ebda9;
+    font-size: 1.2em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#login-general-botones .btn:hover,
+#login-general-botones .btn:focus {
+    background-color: #3a9d8f;
+    border-color: #3a9d8f;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+#login-general-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#login-general-redes a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#login-general-redes a:hover,
+#login-general-redes a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+#login-general-redes a i {
+    margin-right: 10px;
+}
+
+#login-general-redes a span {
+    font-size: 1.2em;
+}
+
+#login-general-sector-derecho {
+    background-color: rgba(98, 72, 72, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+#login-general-titulo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login-general-ejemplos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#login-general-ejemplos img {
+    margin: 10px;
+    max-width: 30%;
+    flex-grow: 1;
+    height: auto;
+}
+
+#login-general-carousel .carousel-inner img {
+    max-height: 300px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #login-general-cuadro {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #login-general-sector-izquierdo,
+    #login-general-sector-derecho {
+        width: 100%;
+    }
+
+    #login-general-ejemplos img {
+        max-width: 100%;
+    }
+
+    #login-general-botones .btn {
+        width: 90%;
+    }
+
+    #login-general-redes {
+        align-items: center;
+    }
+
+    #login-general-redes a {
+        justify-content: center;
+    }
+}
+
+/* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR */
+/* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR */
+/* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR *//* LOGIN ADMINISTRADOR */
+
+/* Estilo general para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el fondo del Login Administrador */
+#login-admin {
+    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Cuadro central de Login Administrador */
+#login-admin-cuadro {
+    background: rgba(172, 161, 161, 0.5); /* Color #ACA1A1 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px; /* Máximo ancho del cuadro */
+    width: 100%; /* Ancho del cuadro con margen automático */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+    min-height: 80vh; /* Altura mínima para evitar desbordamiento vertical */
+}
+
+/* Sector izquierdo del cuadro */
+#login-admin-sector-izquierdo {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
+
+/* Logo del sector izquierdo */
+#login-admin-logo img {
+    max-width: 80%; /* Tamaño del logo */
+    margin-bottom: 20px;
+}
+
+#login-admin-form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+
+#login-admin-form .form-group {
+    margin-bottom: 15px; /* Añade espacio entre los campos del formulario */
+}
+
+#login-admin-form .btn {
+    background-color: #4ebda9;
+    border-color: #4ebda9;
+    font-size: 1.2em; /* Tamaño de la fuente del botón */
+}
+
+/* Sector derecho del cuadro */
+#login-admin-sector-derecho {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
+
+/* Título y subtítulo del sector derecho */
+#login-admin-titulo h1 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+    margin-bottom: 10px;
+}
+
+#login-admin-subtitulo h2 {
+    font-size: 1.5em; /* Tamaño del subtítulo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    #login-admin-cuadro {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    
+    #login-admin-sector-izquierdo, #login-admin-sector-derecho {
+        width: 100%; /* Asegura que ambos sectores ocupen el 100% del ancho en pantallas pequeñas */
+        margin: 0; /* Elimina cualquier margen adicional */
+    }
+}
+
+/* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO */
+/* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO */
+/* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO */
+/* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO *//* LOGIN USUARIO */
+
+/* Estilo general para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el fondo del Login Usuario */
+#login-usuario {
+    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Cuadro central de Login Usuario */
+#login-usuario-cuadro {
+    background: rgba(172, 161, 161, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1400px;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    min-height: 80vh;
+    margin: auto;
+}
+
+/* Sector izquierdo del cuadro */
+#login-usuario-sector-izquierdo {
+    background-color: rgba(98, 72, 72, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#login-usuario-logo img {
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+#login-usuario-form {
+    width: 100%;
+}
+
+#login-usuario-form .form-group {
+    margin-bottom: 15px;
+}
+
+#login-usuario-form .form-control {
+    border-radius: 5px;
+}
+
+#login-usuario-form .btn {
+    background-color: #4ebda9;
+    border-color: #4ebda9;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+}
+
+#login-usuario-recuperacion a {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* Sector derecho del cuadro */
+#login-usuario-sector-derecho {
+    background-color: rgba(98, 72, 72, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+#login-usuario-titulo {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login-usuario-info {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-usuario-info .btn {
+    background-color: #f7c600;
+    border-color: #f7c600;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#login-usuario-info .btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra más intenso al pasar el ratón */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #login-usuario-cuadro {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #login-usuario-sector-izquierdo,
+    #login-usuario-sector-derecho {
+        width: 100%;
+    }
+}
+
+
+
+/* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO */
+/* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO */
+/* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO *//* RECUPERACION USUARIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo general para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total de los elementos */
+}
+
+/* Barra de navegación */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color de fondo de la navbar */
+    padding: 10px 20px; /* Espacio dentro de la navbar */
+    color: white; /* Color del texto de la navbar */
+    position: fixed; /* Fija la navbar en la parte superior */
+    width: 100%; /* Asegura que la navbar ocupe todo el ancho */
+    top: 0; /* Posiciona la navbar en la parte superior */
+    z-index: 1000; /* Asegura que la navbar esté por encima del contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+#navbar-logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el título */
+}
+
+#navbar-logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+#navbar-title {
+    font-size: 1.8em; /* Tamaño de la fuente para el título */
+    font-weight: bold; /* Hace el texto más grueso */
+    margin-left: 15px; /* Espacio entre el logo y el título */
+}
+
+#navbar-link {
+    font-size: 1em; /* Tamaño de la fuente para el enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición para el hover */
+    margin-right: 20px; /* Espacio adicional desde el borde derecho */
+}
+
+#navbar-link:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    color: #f7c600; /* Color del texto al pasar el ratón */
+}
+
+/* Ajusta el margen superior del contenedor principal para que no se solape con el navbar */
+#recuperacion-contraseña {
+    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 20px; /* Padding ajustado para evitar que el contenido se solape con la navbar */
+    box-sizing: border-box;
+    margin-top: 60px; /* Asegura que el contenido respete el espacio del navbar */
+}
+
+/* Cuadro central de Recuperación de Contraseña */
+#recuperacion-contraseña-cuadro {
+    background: rgba(172, 161, 161, 0.5); /* Color #ACA1A1 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Reduce el máximo ancho del cuadro */
+    width: 90%; /* Ancho del cuadro con margen automático */
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    min-height: 70vh; /* Reduce la altura mínima del cuadro */
+    margin: auto;
+}
+
+/* Sector izquierdo del cuadro */
+#recuperacion-contraseña-sector-izquierdo {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#recuperacion-contraseña-logo img {
+    max-width: 80%; /* Tamaño del logo */
+    margin-bottom: 20px;
+}
+
+#recuperacion-contraseña-form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+
+#recuperacion-contraseña-form .form-group {
+    margin-bottom: 15px; /* Añade espacio entre los campos del formulario */
+}
+
+#recuperacion-contraseña-form .form-group label {
+    font-size: 1.2em; /* Tamaño del texto del label */
+    margin-bottom: 10px; /* Espacio debajo del label */
+    display: block; /* Asegura que el label ocupe todo el ancho disponible */
+}
+
+#recuperacion-contraseña-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out; /* Transición para el efecto hover */
+}
+
+#recuperacion-contraseña-form .form-control:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el hover en los campos */
+}
+
+#recuperacion-contraseña-form .btn {
+    background-color: #4ebda9;
+    border-color: #4ebda9;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición para el efecto hover */
+    margin-top: 20px; /* Espacio adicional arriba del botón */
+    align-self: center; /* Centra el botón horizontalmente */
+}
+
+#recuperacion-contraseña-form .btn:hover {
+    background-color: #42a69f; /* Color de fondo al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra más intenso al pasar el ratón */
+}
+
+/* Sector derecho del cuadro */
+#recuperacion-contraseña-sector-derecho {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+#recuperacion-contraseña-titulo {
+    font-size: 4em; /* Tamaño grande para el título */
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000; /* Borde negro alrededor del texto */
+}
+
+#recuperacion-contraseña-info {
+    font-size: 1.8em; /* Tamaño mediano para el texto informativo */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #000; /* Borde negro alrededor del texto */
+}
+
+#recuperacion-contraseña-logo {
+    text-align: center; /* Centra el logo en el sector derecho */
+    margin-top: 20px; /* Espacio arriba del logo */
+}
+
+#recuperacion-contraseña-info .btn {
+    background-color: #f7c600;
+    border-color: #f7c600;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición para el efecto hover */
+}
+
+#recuperacion-contraseña-info .btn:hover {
+    background-color: #e5b700; /* Color de fondo al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra más intenso al pasar el ratón */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #recuperacion-contraseña-cuadro {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #recuperacion-contraseña-sector-izquierdo,
+    #recuperacion-contraseña-sector-derecho {
+        width: 100%;
+        margin: 0; /* Elimina cualquier margen adicional */
+    }
+
+    #recuperacion-contraseña-sector-izquierdo {
+        margin-bottom: 20px; /* Añade espacio entre los sectores en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    #recuperacion-contraseña-cuadro {
+        flex-direction: column;
+    }
+
+    #recuperacion-contraseña-sector-izquierdo,
+    #recuperacion-contraseña-sector-derecho {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO */
+/* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO */
+/* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO *//* REGISTRATE USUARIO */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total de los elementos */
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color de fondo de la navbar */
+    padding: 10px 20px; /* Espacio dentro de la navbar */
+    color: white; /* Color del texto de la navbar */
+    position: fixed; /* Fija la navbar en la parte superior */
+    width: 100%; /* Asegura que la navbar ocupe todo el ancho */
+    top: 0; /* Posiciona la navbar en la parte superior */
+    z-index: 1000; /* Asegura que la navbar esté por encima del contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+#navbar-logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el título */
+}
+
+#navbar-logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+#navbar-title {
+    font-size: 1.8em; /* Tamaño de la fuente para el título */
+    font-weight: bold; /* Hace el texto más grueso */
+    margin-left: 15px; /* Espacio entre el logo y el título */
+}
+
+#navbar-link {
+    font-size: 1em; /* Tamaño de la fuente para el enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición para el hover */
+    margin-right: 20px; /* Espacio adicional desde el borde derecho */
+}
+
+#navbar-link:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    color: #f7c600; /* Color del texto al pasar el ratón */
+}
+
+#registro-usuario {
+    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 20px; /* Padding ajustado para evitar que el contenido se solape con la navbar */
+    box-sizing: border-box;
+    margin-top: 60px; /* Asegura que el contenido respete el espacio del navbar */
+}
+
+#registro-usuario-cuadro {
+    background: rgba(172, 161, 161, 0.5); /* Color #ACA1A1 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Reduce el máximo ancho del cuadro */
+    width: 90%; /* Ancho del cuadro con margen automático */
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    min-height: 70vh; /* Reduce la altura mínima del cuadro */
+    margin: auto;
+}
+
+#registro-usuario-sector-izquierdo {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#registro-usuario-logo img {
+    max-width: 80%; /* Tamaño del logo */
+    margin-bottom: 20px;
+}
+
+#registro-usuario-form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+
+#registro-usuario-form .form-group {
+    margin-bottom: 15px; /* Añade espacio entre los campos del formulario */
+    display: flex; /* Flexbox para alinear los campos de nombre y apellido en la misma fila */
+    gap: 10px; /* Espacio entre los campos de nombre y apellido */
+}
+
+#registro-usuario-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out; /* Transición para el efecto hover */
+}
+
+#registro-usuario-form .form-control:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el hover en los campos */
+}
+
+#registro-usuario-form .btn {
+    background-color: #4ebda9;
+    border-color: #4ebda9;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición para el efecto hover */
+    margin-top: 20px; /* Espacio adicional arriba del botón */
+    align-self: center; /* Centra el botón horizontalmente */
+}
+
+#registro-usuario-form .btn:hover {
+    background-color: #42a69f; /* Color de fondo al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra más intenso al pasar el ratón */
+}
+
+#registro-usuario-sector-derecho {
+    background-color: rgba(98, 72, 72, 0.3); /* Color #624848 con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+#registro-usuario-titulo {
+    font-size: 3em; /* Tamaño grande para el título */
+    font-weight: bold; /* Letra gruesa para el título */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    text-shadow: 2px 2px 0 #000; /* Añade borde negro de 2 píxeles */
+}
+
+#registro-usuario-info {
+    font-size: 1.5em; /* Tamaño mediano para el texto informativo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#registro-usuario-info strong {
+    font-weight: bold; /* Letra en negrita para partes destacadas */
+}
+
+#registro-usuario-info .descuento {
+    font-weight: bold; /* Letra en negrita para el descuento */
+    color: #f7c600; /* Color destacado, pero no chillón */
+    text-shadow: 2px 2px 0 #000; /* Añade borde negro de 2 píxeles */
+}
+
+#registro-usuario-info .llamada-atencion {
+    font-weight: bold; /* Letra en negrita para la llamada de atención */
+    color: #ff6600; /* Color para llamar la atención sin ser chillón */
+    text-shadow: 2px 2px 0 #000; /* Añade borde negro de 2 píxeles */
+}
+
+#registro-usuario-info .recordatorio {
+    font-style: italic; /* Estilo de letra en cursiva para el recordatorio */
+    text-shadow: 2px 2px 0 #000; /* Añade borde negro de 2 píxeles */
+}
+
+/* Estilo para el logo en el sector derecho */
+#registro-usuario-logo img {
+    border-radius: 50%; /* Hace que el logo sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el logo */
+    transition: box-shadow 0.3s ease-in-out; /* Transición para el hover */
+}
+
+#registro-usuario-logo img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra más intenso al pasar el ratón */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #registro-usuario-cuadro {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #registro-usuario-sector-izquierdo,
+    #registro-usuario-sector-derecho {
+        width: 100%;
+        margin: 0; /* Elimina cualquier margen adicional */
+    }
+
+    #registro-usuario-sector-izquierdo {
+        margin-bottom: 20px; /* Añade espacio entre los sectores en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    #registro-usuario-cuadro {
+        flex-direction: column;
+    }
+
+    #registro-usuario-sector-izquierdo,
+    #registro-usuario-sector-derecho {
+        width: 100%;
+    }
+}
+
+
+
