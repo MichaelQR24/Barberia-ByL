@@ -992,7 +992,7 @@ body {
 }
 
 #registro-usuario {
-    background: url('../InicioSesionGeneral/assets/fondo.png') no-repeat center center fixed;
+    background: url('../Usuario/assets/Fondo.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     display: flex;
