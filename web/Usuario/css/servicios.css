@@ -1,0 +1,261 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/barberiaindex.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(44,33,22,0.85);
+    z-index: 0;
+    pointer-events: none;
+}
+body > * { position: relative; z-index: 1; }
+
+header {
+    background: rgba(44,33,22,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 38px;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 2px 12px #0008;
+}
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+}
+.logo img { 
+    height: 48px; 
+    border-radius: 7px; 
+}
+.logo h1 { 
+    font-size: 2rem !important; 
+    color: #d4af37; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+}
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.08rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color .2s;
+    padding: 6px 12px;
+    border-radius: 4px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+nav ul li a:hover { 
+    color: #d4af37; 
+}
+.user-icon { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.user-icon h5 { 
+    margin: 0; 
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    transition: color .2s; 
+}
+.user-icon h5:hover { 
+    color: #d4af37; 
+}
+.user-icon img { 
+    height: 34px; 
+    border-radius: 50%; 
+    border: 2px solid #d4af37; 
+    background: #fff; 
+}
+
+/* MAIN Y SERVICIOS */
+main {
+    position: relative;
+    z-index: 1;
+}
+.servicios-box {
+    background: rgba(60, 45, 20, 0.75); /* marrón cálido semitransparente */
+    border-radius: 26px;
+    box-shadow:
+        0 8px 32px 0 rgba(0, 0, 0, 0.7),
+        inset 0 1.5px 0 rgba(255, 255, 255, 0.1);
+    margin-bottom: 38px;
+    padding: 36px 20px 28px 20px;
+    text-align: center;
+    color: #f0e6b8; /* tono crema claro para buena legibilidad */
+    border: 1.5px solid rgba(212, 175, 55, 0.6); /* borde dorado suave */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: box-shadow 0.3s ease;
+}
+.servicios-box:hover {
+    box-shadow:
+        0 12px 48px 0 rgba(212, 175, 55, 0.8),
+        inset 0 1.5px 0 rgba(255, 255, 255, 0.15);
+}
+.servicios-box h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #d4af37; /* dorado vivo */
+    margin-bottom: 18px;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+.servicio-item {
+    margin-bottom: 30px;
+    background: rgba(80, 60, 25, 0.25);
+    border-radius: 16px;
+    padding: 16px 8px;
+    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.15);
+    color: #f0e6b8;
+}
+.servicio-item h4 {
+    color: #d4af37;
+    font-family: 'Montserrat', serif;
+    font-weight: 800;
+    font-size: 1.18rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.7px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.carousel-inner img,
+.estilismo-imgs img,
+.tratamientos-imgs img {
+    border-radius: 16px;
+    border: 3px solid #d4af37;
+    background: #fffbea;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    transition: border-color 0.3s ease;
+}
+.estilismo-imgs,
+.tratamientos-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.estilismo-imgs img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.tratamientos-imgs img {
+    width: 90%;
+    max-width: 240px;
+}
+
+/* FOOTER MODERNO Y LLAMATIVO */
+footer {
+    background: linear-gradient(135deg, #3e2f1c, #6b4e1a);
+    border-top: 4px solid #d4af37;
+    color: #f9f4e7;
+    font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+    padding: 50px 20px 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -6px 20px rgba(212, 175, 55, 0.75);
+    transition: background 0.4s ease;
+}
+footer:hover {
+    background: linear-gradient(135deg, #5a3e1a, #8c6823);
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 2vw;
+}
+.footer-left, .footer-right {
+    flex: 1 1 280px;
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-content p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #f0e6c8;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    margin: 10px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.footer-content p:hover {
+    color: #d4af37;
+    cursor: default;
+    text-shadow: 0 0 8px #d4af37;
+}
+.copyright {
+    color: #d4af37;
+    font-size: 1rem;
+    margin-top: 25px;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 2vw 8px 2vw;
+    }
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    .user-icon img {
+        width: 26px;
+        height: 26px;
+    }
+    .servicios-box {
+        padding: 18px 5px 14px 5px;
+        border-radius: 13px;
+    }
+}

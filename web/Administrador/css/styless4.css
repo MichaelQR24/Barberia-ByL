@@ -1,0 +1,180 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19 oct. 2024, 1:31:00 p. m.
+    Author     : Micha
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('../../assets/pagina_principal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(44,33,22,0.82); /* marrón oscuro translúcido */
+    z-index: 0;
+}
+.login-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+/* Panel izquierdo */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+.left-panel h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #d4af37;
+    text-shadow: 0 2px 12px #000a;
+}
+.left-panel p {
+    font-size: 1.25rem;
+    max-width: 350px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #ffeec2;
+    margin-bottom: 30px;
+}
+.left-panel img {
+    margin-top: 40px;
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 20px #d4af37;
+    object-fit: cover;
+    background: #fff;
+}
+/* Panel derecho */
+.right-panel {
+    flex: 1;
+    background: rgba(44,33,22,0.90);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 50px;
+    box-shadow: -8px 0 30px rgba(212, 175, 55, 0.08);
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+}
+.right-panel h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.4rem;
+    color: #d4af37;
+    margin-bottom: 38px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 2px 8px #000a;
+}
+form { width: 100%; }
+label {
+    font-weight: 600;
+    font-size: 1.09rem;
+    color: #ffeec2;
+    margin-bottom: 6px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 10px 0 30px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.10);
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 1.5px #d4af3740 inset;
+}
+input::placeholder {
+    color: #ffeec2;
+    opacity: 1;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    background: rgba(255,255,255,0.22);
+    outline: none;
+    box-shadow: 0 0 8px #d4af37;
+    color: #fff;
+}
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #d4af37 60%, #a67c2f 100%);
+    border: none;
+    border-radius: 10px;
+    color: #2d210e;
+    font-weight: 700;
+    font-size: 1.15rem;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: background 0.3s, box-shadow 0.3s, color 0.2s;
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.12);
+}
+button:hover {
+    background: linear-gradient(90deg, #a67c2f 20%, #d4af37 100%);
+    color: #fff;
+    box-shadow: 0 8px 22px #d4af3750;
+}
+.message-box {
+    margin-top: 20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05em;
+    display: none;
+}
+.message-box.error {
+    background: #fbe8e0;
+    color: #b91c1c;
+    border: 1.5px solid #fca5a5;
+    display: block;
+}
+.message-box.warning {
+    background: #f9e7c1;
+    color: #a67c2f;
+    border: 1.5px solid #d4af37;
+    display: block;
+}
+/* Responsive */
+@media (max-width: 991px) {
+    .login-wrapper { flex-direction: column; }
+    .left-panel, .right-panel {
+        flex: none;
+        width: 100%;
+        box-shadow: none !important;
+        border-radius: 0;
+        padding: 40px 30px;
+    }
+    .left-panel { order: 2; text-align: center; }
+    .right-panel { order: 1; padding-top: 60px; padding-bottom: 60px; border-radius: 0; box-shadow: none; }
+    .left-panel img { margin: 30px auto 0 auto; }
+}

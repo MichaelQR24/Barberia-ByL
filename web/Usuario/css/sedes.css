@@ -1,0 +1,282 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24 may 2025, 0:03:40
+    Author     : PROPIETARIO
+*/
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/barberiaindex.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(44,33,22,0.85);
+    z-index: 0;
+    pointer-events: none;
+}
+body > * { position: relative; z-index: 1; }
+
+/* --- HEADER: SE MANTIENE IGUAL --- */
+header {
+    background: rgba(44,33,22,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 38px;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 2px 12px #0008;
+}
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+}
+.logo img { 
+    height: 48px; 
+    border-radius: 7px; 
+}
+.logo h1 { 
+    font-size: 2rem !important; 
+    color: #d4af37; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+}
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.08rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color .2s;
+    padding: 6px 12px;
+    border-radius: 4px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+nav ul li a:hover { 
+    color: #d4af37; 
+}
+.user-icon { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.user-icon h5 { 
+    margin: 0; 
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    transition: color .2s; 
+}
+.user-icon h5:hover { 
+    color: #d4af37; 
+}
+.user-icon img { 
+    height: 34px; 
+    border-radius: 50%; 
+    border: 2px solid #d4af37; 
+    background: #fff; 
+}
+
+/* --- SEDES --- */
+.sedes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 38px;
+    padding: 48px 10px 60px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sedes-box {
+    width: 340px;
+    background: linear-gradient(135deg, #2c2116 80%, #d4af37 120%);
+    color: #fff;
+    border-radius: 22px;
+    padding: 30px 18px 22px 18px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.20), 0 1.5px 0 #fff2 inset;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid #d4af37;
+}
+.sedes-box:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 32px 0 rgba(212,175,55,0.20), 0 1.5px 0 #fff2 inset;
+    border-color: #fff;
+}
+.sedes-box h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #d3ad6a;
+    margin-bottom: 12px;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+.images-sedes-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.images-sedes-grid img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2.5px solid #d4af37;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.19);
+}
+.sedes-box p {
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+    color: #f4e7c2;
+    text-shadow: 0 1px 4px #0007;
+}
+.sedes-box .map-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #d4af37;
+    background: #fff1;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.sedes-box .map-link:hover {
+    background: #d4af37;
+    color: #2c2116;
+    transform: scale(1.08);
+}
+
+/* --- FOOTER --- */
+footer {
+    background: linear-gradient(135deg, #3e2f1c, #6b4e1a);
+    border-top: 4px solid #d4af37;
+    color: #f9f4e7;
+    font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+    padding: 50px 20px 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -6px 20px rgba(212, 175, 55, 0.75);
+    transition: background 0.4s ease;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 2vw;
+}
+.footer-left, .footer-right {
+    flex: 1 1 280px;
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-content p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #f0e6c8;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    margin: 10px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.footer-content p:hover {
+    color: #d4af37;
+    cursor: default;
+    text-shadow: 0 0 8px #d4af37;
+}
+.copyright {
+    color: #d4af37;
+    font-size: 1rem;
+    margin-top: 25px;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1100px) {
+    .sedes-container {
+        gap: 18px;
+    }
+}
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+    .sedes-container {
+        gap: 18px;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 2vw 8px 2vw;
+    }
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    .user-icon img {
+        width: 26px;
+        height: 26px;
+    }
+    .sedes-container {
+        padding: 18px 2px 30px 2px;
+    }
+    .sedes-box {
+        width: 98vw;
+        min-width: unset;
+        max-width: 350px;
+    }
+}
+

@@ -1,0 +1,310 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24 may 2025, 0:06:56
+    Author     : PROPIETARIO
+*/
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/barberiaindex.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(44,33,22,0.85);
+    z-index: 0;
+    pointer-events: none;
+}
+body > * { position: relative; z-index: 1; }
+
+/* ----------- HEADER ----------- */
+header {
+    background: rgba(44,33,22,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 38px;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 2px 12px #0008;
+}
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+}
+.logo img { 
+    height: 48px; 
+    border-radius: 7px; 
+}
+.logo h1 { 
+    font-size: 2rem !important; 
+    color: #d4af37; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+}
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.08rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color .2s;
+    padding: 6px 12px;
+    border-radius: 4px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+nav ul li a:hover { 
+    color: #d4af37; 
+}
+.user-icon { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.user-icon h5 { 
+    margin: 0; 
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    transition: color .2s; 
+}
+.user-icon h5:hover { 
+    color: #d4af37; 
+}
+.user-icon img { 
+    height: 34px; 
+    border-radius: 50%; 
+    border: 2px solid #d4af37; 
+    background: #fff; 
+}
+
+/* ----------- FORMULARIO DE RESERVA ----------- */
+main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserva-form {
+    background: rgba(44,33,22,0.96);
+    max-width: 420px;
+    width: 100%;
+    margin: 48px auto;
+    padding: 42px 30px 32px 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.35), 0 1.5px 0 #fff2 inset;
+    color: #fff;
+    border: 2.5px solid #d4af37;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+
+.reserva-form h2 {
+    color: #d4af37;
+    font-size: 1.65rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+
+.reserva-form .form-group {
+    margin-bottom: 18px;
+}
+
+.reserva-form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #d4af37;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.reserva-form input,
+.reserva-form select,
+.reserva-form textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border-radius: 7px;
+    border: 1.5px solid #d4af37;
+    background: #fffbea;
+    color: #2c2116;
+    font-size: 1rem;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 2px 8px #0001;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    margin-bottom: 2px;
+    resize: none;
+}
+.reserva-form input:focus,
+.reserva-form select:focus,
+.reserva-form textarea:focus {
+    border-color: #b6892e;
+    background: #fff6d6;
+    outline: none;
+    box-shadow: 0 2px 12px #d4af3780;
+}
+
+.reserva-form textarea {
+    min-height: 60px;
+    max-height: 140px;
+}
+
+.btn-reservar {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #d4af37 60%, #b6892e 100%);
+    color: #222;
+    border: none;
+    padding: 14px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px #0004;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    letter-spacing: 1px;
+}
+.btn-reservar:hover {
+    background: linear-gradient(90deg, #fff6d6 60%, #d4af37 100%);
+    color: #7a5a1c;
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px #d4af3760;
+}
+
+/* Mensaje de éxito (opcional) */
+.reserva-form .form-success {
+    margin-top: 10px;
+    color: #388e3c;
+    background: #eafbe7;
+    border: 1px solid #a5d6a7;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px #0001;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to   { opacity: 1; transform: none;}
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+    background: linear-gradient(135deg, #3e2f1c, #6b4e1a);
+    border-top: 4px solid #d4af37;
+    color: #f9f4e7;
+    font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+    padding: 50px 20px 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -6px 20px rgba(212, 175, 55, 0.75);
+    transition: background 0.4s ease;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 2vw;
+}
+.footer-left, .footer-right {
+    flex: 1 1 280px;
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-content p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #f0e6c8;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    margin: 10px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.footer-content p:hover {
+    color: #d4af37;
+    cursor: default;
+    text-shadow: 0 0 8px #d4af37;
+}
+.copyright {
+    color: #d4af37;
+    font-size: 1rem;
+    margin-top: 25px;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 2vw 8px 2vw;
+    }
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    .user-icon img {
+        width: 26px;
+        height: 26px;
+    }
+    .reserva-form {
+        padding: 18px 8px 16px 8px;
+        border-radius: 12px;
+        max-width: 99vw;
+    }
+    main {
+        padding: 0 2vw;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+}
